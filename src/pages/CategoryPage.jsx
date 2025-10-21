@@ -18,9 +18,12 @@ export default function CategoryPage() {
   }, [category]);
 
   return (
-    <div className="py-10">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-10">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-brand mb-6 capitalize">{category}</h2>
+        <div className="mb-8">
+          <h2 className="text-4xl font-bold text-gray-900 capitalize mb-2">{category}</h2>
+          <p className="text-gray-600">Browse available {category} for trade</p>
+        </div>
       </div>
       <ProductGrid items={items} />
     </div>
